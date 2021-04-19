@@ -2,7 +2,8 @@
 <?php 
     // print_r($_SESSION);
     $chamados = array();
-    $arquivo = fopen('../../../xampp/help_desk/arquivo.hd', 'r'); 
+    // $arquivo = fopen('../../../xampp/help_desk/arquivo.hd', 'r');
+    $arquivo = fopen('arquivo.hd', 'r');  
     while(!feof($arquivo) ){
         $registro = fgets($arquivo);
         $chamados[] = $registro;
