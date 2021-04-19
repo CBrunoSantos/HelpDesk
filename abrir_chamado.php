@@ -1,3 +1,5 @@
+<? require_once "validador_acesso.php"?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,14 +26,14 @@
                     <div class="chamado">
                         <div class="row">
                             <div class="col">
-                                <form>
+                                <form method="post" action="registra_chamado.php">
                                     <div class="form-group">
                                         <label >Titulo</label>
-                                        <input type="text" class="form-control" placeholder="Titulo">
+                                        <input name="titulo" type="text" class="form-control" placeholder="Titulo">
                                     </div>
                                     <div class="form-group">
                                         <label>Categoria</label>
-                                        <select class="form-control">
+                                        <select name="categoria" class="form-control">
                                             <option>Criação Usuário</option>
                                             <option>impressora</option>
                                             <option>Hardware</option>
@@ -41,11 +43,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Descrição</label>
-                                        <textarea class="form-control" rows="3"></textarea>
+                                        <textarea name="descricao" class="form-control" rows="3"></textarea>
                                     </div>
                                     <div class="row mt-5">
                                         <div class="col-6">
-                                            <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                                            <a class="btn btn-lg btn-warning btn-block" href="home.php">Voltar</a>
                                         </div>
                                         <div class="col-6">
                                             <button class="btn btn-lg btn-info btn-block" type="submit">Abrir</button>
